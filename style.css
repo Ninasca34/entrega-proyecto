@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Source+Sans+Pro&display=swap');
+
+/* Etiquetas de HTML */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+/* Pendiente */
+/* Fin Header */ 
+
+
+/* Section 1 */
+
+  .column {
+    float: left;
+    width: 50%;
+  }
+
+  .turquoise-color{
+    background: #43d9b8;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+h1 {
+    font-size: 6rem;
+    letter-spacing: -0.05em;
+    line-height: 1.1;
+    margin-left: auto;
+    padding: 40px;
+    padding-bottom: 20px;
+    width: 20rem;
+} 
+
+.slogan {
+    font-size: 1.2rem;
+    letter-spacing: 0.175em;
+    line-height: 2.5;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 33px;
+}
+
+.owl-carousel .owl-item img {
+    padding-bottom: 50px;
+}
+
+.demo-image {
+    background-image: url(images/tshirt_transparent.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 750px;
+}
+
+img.tshirt-selected { 
+    max-width: 29%;
+    position: relative;
+    box-shadow: #888 2px 1px 7px;
+    top: 18rem;
+    left: 36%;
+}
+
+
+@media screen and (min-width: 1024px) {
+    img.tshirt-selected { 
+        max-width: 29%;
+        position: relative;
+        box-shadow: #888 2px 1px 7px;
+        top: 18rem;
+        left: 36%;
+    }
+}
+
+@media screen and (width: 768px) {
+    img.tshirt-selected { 
+        max-width: 29%;
+        position: relative;
+        box-shadow: #888 2px 1px 7px;
+        top: 18rem;
+        left: 36%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+    img.tshirt-selected { 
+        max-width: 29%;
+        position: relative;
+        box-shadow: #888 2px 1px 7px;
+        top: 18rem;
+        left: 36%;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 395px) {
+    img.tshirt-selected { 
+        max-width: 29%;
+        position: relative;
+        box-shadow: #888 2px 1px 7px;
+        top: 18rem;
+        left: 36%;
+    }
+}
+
+/* Fin Section 1 */
+
+
+
+
+/* Footer */
+/* Pendiente */
+/* Fin Footer */ 
