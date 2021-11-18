@@ -17,3 +17,33 @@ document.querySelectorAll(".img-carousel").forEach((item) => {
  function setImageToTshirt(element, src){
     element.setAttribute("src", src)
  }
+
+ // Una vez seleccionada la imágen selecciona aceptar y continúa al siguiente paso
+
+ let boton = document.getElementById("btnPrincipal")
+ boton.addEventListener("click", respuestaClick)
+ function respuestaClick(){
+     console.log("Respuesta Evento");
+ }
+
+
+ 
+ /* var edad = 16;
+  if (edad === 18) {
+    var esAdulto = true;
+  } else {
+    esAdulto = false;
+  }
+  console.log("..Es Adulto: " + esAdulto);*/
+
+/* let resultado = false;
+
+ if (resultado == false) {
+    console.log("Por favor vuelva a seleccionar una imágen");
+ } else {
+   
+    console.log("siguiente");
+ } */
+ 
+ 
+ 
