@@ -1,3 +1,4 @@
+//Primera Sección 
 let imagenSeleccionada = false;
 
 // Selección de una imágen del carousel 
@@ -21,7 +22,7 @@ document.querySelectorAll(".img-carousel").forEach((item) => {
     element.setAttribute("src", src)
  }
 
- // Una vez seleccionada la imágen, realiza validación
+ // Una vez seleccionada la imágen, se realiza una validación
 
  let boton = document.getElementById("btnPrincipal")
  boton.addEventListener("click", respuestaClick)
@@ -29,30 +30,38 @@ document.querySelectorAll(".img-carousel").forEach((item) => {
      if (imagenSeleccionada == true) {
         console.log("Siguiente");
      } else {
-        console.log("Por favor seleccione una imágen para avanzar en el pedido");
-     }    
+        console.log("Por favor seleccione una imágen para avanzar con el pedido");
+     }      
  }
  
  
 
 
+//Segunda Sección: Se ingresa un texto, el cual se imprimirá en la remera
 
 
-/*
- document.querySelector("").for((item) => {
-    item.addEventListener("click", (event) => {
-      const text = event.target.getAttribute("alt");
-      const src = event.target.getAttribute("src")
-      console.log("Usted ha seleccionado agregar el siguiente texto: " + texto)
-      console.log(src)
-      const tshirt = document.querySelector(".tshirt-selected");
-      setImageToTshirt(tshirt, src);
-      
-    });
-  });
+let input = document.querySelector("textarea");
+let textarea = document.getElementsByTagName("textarea")[0];
+input.addEventListener('click', () => {
+    console.log("Usted ha ingresado el siguiente texto: ");
+    
+});
 
- function setImageToTshirt(element, src){
-    element.setAttribute("src", src)
- }
+function send() {
+    console.log(textarea.value);
+}
 
- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+ //Una vez impreso el texto en la remera, se continúa a la siguiente sección 
