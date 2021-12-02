@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <link href="vendor/pgwmodal/pgwmodal.min.css" rel="stylesheet">
+
+
 
     <!-- Owl Stylesheets -->
     <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
@@ -68,7 +71,7 @@
                 <div class="demo-image">
                     <img class="tshirt-selected" src="images/placeholder.jpeg"/>
                     <div class="container-btn1">
-                        <button id="btnPrincipal">Continuar</button>
+                        <button id="btnPrincipal">Continue</button>
                     </div>
                 </div>
             </div>
@@ -79,57 +82,68 @@
 
 
 <!-- Section 2 -->
-    <section class="container2">
-        <div class="row">
-            <div class="column turquoise-color">
-                <div>
-                    <h2>Create Your Own Text</h2>
-                    <p class="slogan2">Custom Your Design</p>
-                </div>
 
-                <div class="main-form">
-                    <form name="input-text">
-                        <div class="box-btn2"> 
-                            <input class="btn2" type="button" value="Print" onclick="send()">
-                        </div>
-                    
-                        <br></br>
-                        <textarea name="msg"></textarea>
-                    </form>
-                 </div>
-            </div>
+<section class="container-2">
 
-            <div class="column">
-                <div class="demo-image">
-                    <img class="tshirt-selected" src="images/placeholder.jpeg"/>
-                    <div class="textSelected">
-                        
-                    </div>
-                    <div class="container-btn1">
-                        <button id="btnPrincipal">Continuar</button>  
-                    </div>
-                </div>
-            </div>
+    <div class="second-title">
+        <h2>Choose Your Size</h2>
+    </div>
 
+    <div id="btns-size">
+        <button onclick="myFunction(event)" class="btn-size" id="0">S</button>
+        <button onclick="myFunction(event)" class="btn-size" id="1" >M</button>
+        <button onclick="myFunction(event)" class="btn-size" id="2">XL</button>
+    </div>
+
+    <div class="counter">
+        <form action="/action_page.php">
+            <label for="points">Qty:</label>
+            <input class="calc" type="number" min="1"id="points" name="points" step="1">
+            <!--<input type="submit">-->
+        </form>
+    </div>
+   
+
+    <div class="add-product">
+        <button disabled class="addToCart">Add to cart</button>
+    </div>
+
+    <div class="third-title">
+        <h3>Description</h3>
+        <div class="list-price">
+            <p class="price">List Price: $560.-</p>
         </div>
-    
-    </section>
+        <div class="paragraph1">
+            <p class="parag1"></p>
+                Solids: 100% Cotton; Heathers: 60% Cotton, 40% Polyester
+                Machine Wash. 
+            </p>
+        </div>
+    </div>
+</section>
+
+<div id="modalContent" style="display: none;">
+    <strong style="color: #ff0000;">Modal Example 2</strong>
+</div>
+
 <!-- Fin Section 2 -->
-
-
-
-
-
-
-
-
-
-
-
 
 
 <!-- Section 3 -->
 <!-- Fin Section 3 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- Section 4 -->
 <!-- Fin Section 4 -->
@@ -144,6 +158,8 @@
 
 <!-- Scripts -->
     <script src="vendor/jquery.min.js"></script>
+    <script src="vendor/pgwmodal/pgwmodal.min.js"></script>
+    
     <script src="owlcarousel/owl.carousel.js"></script>
     <script>
         $(document).ready(function() {
@@ -167,7 +183,8 @@
                 margin: 20
                 }
             }
-            })
+            });
+
         })
     </script>
     <script src="app.js"></script>
@@ -249,9 +266,6 @@
 
 
 
-
-
-  
    <!-- (left)
     GET IN TOUCH
     

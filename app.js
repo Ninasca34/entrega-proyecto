@@ -17,7 +17,6 @@ document.querySelectorAll(".img-carousel").forEach((item) => {
 
  // Presentación de la imagen seleccionada impresa en la remera
 
-
  function setImageToTshirt(element, src){
     element.setAttribute("src", src)
  }
@@ -35,21 +34,41 @@ document.querySelectorAll(".img-carousel").forEach((item) => {
  }
  
  
+// Segunda Sección: Selección del talle de la remera y cantidad  
+
+const myFunction = (event) => {
+    const clickedElem = event.target
+    const allBtns = document.querySelectorAll('.btn-size')
+    allBtns.forEach(btn => btn.classList.remove("btn-size-active"))
+    clickedElem.classList.add("btn-size-active")
+  }
+
+  const submit = () => {
+    const selectedText = document.querySelector(".addToCart-active") ? document.querySelector(".addToCart-active").innerHTMl : 'click'
+    console.log(selectedText)
+  }
 
 
-//Segunda Sección: Se ingresa un texto, el cual se imprimirá en la remera
+// Carrito de compra:
+// valido que seleccionó el talle y guardo validacion en variable
+// valido que el valor sea > 0 y guardo validacion en variable
+
+// chequeo que tanto el talle como la cantidad cumplan con las
+// condiciones anteriores
+// de ser asi, continuar con el procedimiento
 
 
-let input = document.querySelector("textarea");
-let textarea = document.getElementsByTagName("textarea")[0];
-input.addEventListener('click', () => {
-    console.log("Usted ha ingresado el siguiente texto: ");
-    
+//una vez se completa el talle y la cantidad, se habilita y se muestra el popup
+$('.addToCart').on("click", function(){
+    $.pgwModal({
+        target: '#modalContent',
+        title: 'Modal title 2',
+        maxWidth: 400
+    });
 });
 
-function send() {
-    console.log(textarea.value);
-}
+
+// calculo final
 
 
 
@@ -64,4 +83,9 @@ function send() {
 
 
 
- //Una vez impreso el texto en la remera, se continúa a la siguiente sección 
+
+
+
+
+
+

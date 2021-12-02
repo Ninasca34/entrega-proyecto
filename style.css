@@ -20,7 +20,7 @@
   }
 
   .turquoise-color{
-    background: #43d9b8;
+    background: #6ea79a;
   }
   
   .row:after {
@@ -54,6 +54,7 @@ h1 {
     padding: 33px;
 }
 
+
 .owl-carousel .owl-item img {
     padding-bottom: 50px;
 }
@@ -83,58 +84,26 @@ img.tshirt-selected {
     font-size: 22px;
     border: none;
     color: white; 
-    transition-duration: 0.4s; 
     border-radius: 0.5rem; 
     text-decoration: none;
-    padding: 10px 60px;
-    margin-bottom: 50px;
-    background-color: #43d9b8;
+    padding: 6px 30px 10px;
+    background-color: #31645b;
     font-weight: 700;
     font-style: normal; 
     max-width: 29%;
     position: relative;
     box-shadow: #888 2px 1px 7px;
     top: 29rem;
-    /* & */
-    /*
-    &:hover {
-        background-position: $position;
-        background-color: rgb(207, 156, 61);
-        font-weight: 700;
-        font-style: normal; 
-    }*/
 } 
  
-h2 {
-    font-size: 3rem;
-    letter-spacing: -0.05em;
-    line-height: 1.5;
-    margin-left: auto;
-    padding: 60px;
-    padding-bottom: 0px;
-    width: 15rem;
-    font-family: "Raleway", Helvetica, sans-serif;
-}
-
 .slogan2 {
     text-align: right;
     font-size: 1.2rem;
     letter-spacing: 0.175em;
     line-height: 2.5;
     text-transform: uppercase;
-    padding: 33px;
-}
-
-.main-form {
-    padding-top: 0px;
-}
-
-
-textarea {
-   height: 15rem;
-   width: 25rem;
-   margin-left: 10rem;
-   margin-bottom: 10rem;
+    margin-top: 30px;
+    margin-right: 50px;
 }
 
 .btn2 {
@@ -153,6 +122,134 @@ textarea {
     justify-content: space-around;
 }
 
+.container-2 {
+    background-color: rgb(209, 224, 224);
+}
+
+.second-title {
+    text-align: center;
+}
+
+
+h2 {
+    font-size: 2rem;
+    letter-spacing: -0.05em;
+    line-height: 1.5;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-family: "Raleway", Helvetica, sans-serif;
+}
+
+.btn-size {
+    padding: 12px 25px;
+    margin: 10px;
+}
+
+
+#btns-size {
+    display: flex;
+    justify-content: center;
+}
+
+
+.btn-size-active {
+    background: #a8eede;
+  }
+
+
+.third-title {
+    text-align: center;
+}
+
+
+h3 {
+    font-size: 1.3rem;
+    letter-spacing: -0.05em;
+    line-height: 1.5;
+    padding-top: 35px;
+    padding-bottom: 10px;
+    font-weight: unset;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.list-price {
+    padding-top:10px;
+
+}
+
+.price {
+    font-size: 1.2rem;
+}
+
+
+.paragraph1 {
+    font-size: 1.1rem;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 1.5rem;
+    text-align: center;
+   
+}
+
+.parag1 {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.add-product {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.addToCart {
+    font-size: 22px;
+    border: none;
+    color: white;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    padding: 10px 40px;
+    background-color: #74caba;
+    font-weight: 700;
+    font-style: normal;
+    max-width: 29%;
+   
+    box-shadow: #888 2px 1px 7px;
+    top: 29rem;
+}
+
+.btn-size:hover {
+    background-position: right;
+    color: black;
+    background-color: #a8eede;
+    font-weight: 700;
+    font-style: normal; 
+}
+
+
+.counter {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    padding-left: 60px;
+}
+
+.calc {
+    width: 20%;
+    padding: 10px;
+}
+
+
+.owl-carousel .owl-item img {
+    padding-bottom: 0px;
+}
+
+
+
+
+
 @media screen and (min-width: 1024px) {
     img.tshirt-selected { 
         max-width: 29%;
@@ -161,6 +258,7 @@ textarea {
         top: 18rem;
         left: 36%;
     }
+
 }
 
 @media screen and (width: 768px) {
@@ -192,6 +290,14 @@ textarea {
         left: 36%;
     }
 }
+
+.owl-theme .owl-dots, .owl-theme .owl-nav {
+    padding-bottom: 50px;
+}
+
+
+
+
 
 /* Fin Section 1 */
 
