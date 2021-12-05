@@ -1,4 +1,4 @@
-//Primera Sección 
+// Primera Sección 
 let imagenSeleccionada = false;
 
 // Selección de una imágen del carousel 
@@ -36,8 +36,8 @@ document.querySelectorAll(".img-carousel").forEach((item) => {
      }      
  }
  
-
-// Segunda Sección: Selección del talle de la remera y cantidad  
+// Segunda Sección
+// Selección del talle de la remera y la cantidad del producto  
 
 const sizeSelector = (event) => {
     const clickedElem = event.target
@@ -46,7 +46,6 @@ const sizeSelector = (event) => {
     clickedElem.classList.add("btn-size-active")
   }
 
-  
 const submit = () => {
     const selectedText = document.querySelector(".addToCart-active") ? document.querySelector(".addToCart-active").innerHTMl : 'click'
     console.log(selectedText)
@@ -59,8 +58,9 @@ $('.btn-size').click(function(){
 $('.calc').click(function(){
     $('.message-errorQuantity').addClass('message-hidden');
 });
+
 // add to cart:
-//una vez se completó el talle y la cantidad, se habilita y se muestra el popup
+//una vez se completó el talle y la cantidad, se habilita y se muestra el popUp
 $('.addToCart').on("click", function(){
     //Jquery 
     //Talle
@@ -91,12 +91,11 @@ $('.addToCart').on("click", function(){
         });
     } 
     
-
 });
 
 
-//checkout
-//magia del pop
+//checkout 
+//Avances en el popUp
 //mostrar remera
 //calcular total segun cantidad
 //boton de pagar
