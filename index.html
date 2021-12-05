@@ -85,33 +85,10 @@
 
 <section class="container-2">
 
-    <div class="second-title">
-        <h2>Choose Your Size</h2>
-    </div>
-
-    <div id="btns-size">
-        <button onclick="myFunction(event)" class="btn-size" id="0">S</button>
-        <button onclick="myFunction(event)" class="btn-size" id="1" >M</button>
-        <button onclick="myFunction(event)" class="btn-size" id="2">XL</button>
-    </div>
-
-    <div class="counter">
-        <form action="/action_page.php">
-            <label for="points">Qty:</label>
-            <input class="calc" type="number" min="1"id="points" name="points" step="1">
-            <!--<input type="submit">-->
-        </form>
-    </div>
-   
-
-    <div class="add-product">
-        <button disabled class="addToCart">Add to cart</button>
-    </div>
-
     <div class="third-title">
         <h3>Description</h3>
         <div class="list-price">
-            <p class="price">List Price: $560.-</p>
+            <p class="price">List Price: $560</p>
         </div>
         <div class="paragraph1">
             <p class="parag1"></p>
@@ -120,10 +97,44 @@
             </p>
         </div>
     </div>
+
+    <div class="second-title">
+        <h2>Size Chart</h2>
+    </div>
+
+    <div id="btns-size">
+        <button onclick="sizeSelector(event)" class="btn-size" value="s">S</button>
+        <button onclick="sizeSelector(event)" class="btn-size" value="m" >M</button>
+        <button onclick="sizeSelector(event)" class="btn-size" value="l">L</button>
+    </div>
+    <div class="message-errorSize message-hidden">
+        <p>Por favor seleecione un talle</p>
+    </div>
+
+    <div class="counter">
+        <form action="/action_page.php">
+            <label for="points">Qty:</label>
+            <input class="calc" type="number" min="1"id="points" name="points" step="1" value="">
+            <!--<input type="submit">-->
+        </form>
+    </div>
+   <div class="message-errorQuantity message-hidden">
+       <p>Please select a quantity</p>
+   </div>
+
+    <div class="add-product">
+        <button class="addToCart">Add to cart</button>
+    </div>
+
+    
 </section>
 
 <div id="modalContent" style="display: none;">
     <strong style="color: #ff0000;">Modal Example 2</strong>
+    <div class="tshirt-image-cart">
+        <img class="tshirt-selected-cart" src="images/placeholder.jpeg"/>
+    </div>
+    <!-- payment button-->
 </div>
 
 <!-- Fin Section 2 -->
