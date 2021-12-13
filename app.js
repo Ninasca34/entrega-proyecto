@@ -1,14 +1,14 @@
-// Primera Sección 
-let imagenSeleccionada = false;
+//Section 1
+let imageSelected = false;
 
-// Selección de una imágen del carousel 
+//Selección de una imágen del carousel 
 
 document.querySelectorAll(".img-carousel").forEach((item) => {
     item.addEventListener("click", (event) => {
-      imagenSeleccionada = true;  
+      imageSelected = true;  
       const image = event.target.getAttribute("alt");
       const src = event.target.getAttribute("src")
-      console.log("Usted ha seleccionado la imagen: " + image)
+      console.log("You have selected the image: " + image)
       console.log(src)
       const tshirt = document.querySelector(".tshirt-selected");
       const tshirtCart = document.querySelector(".tshirt-selected-cart");
@@ -16,28 +16,37 @@ document.querySelectorAll(".img-carousel").forEach((item) => {
       setImageToTshirt(tshirtCart, src);
 
     });
+
   });
 
- // Presentación de la imagen seleccionada impresa en la remera
+ //Presentación de la imagen seleccionada impresa en la remera
 
  function setImageToTshirt(element, src){
     element.setAttribute("src", src)
  }
 
- // Una vez seleccionada la imágen, se realiza una validación
+ //Una vez seleccionada la imágen, se realiza una validación
 
- let boton = document.getElementById("btnPrincipal")
- boton.addEventListener("click", respuestaClick)
+ let button = document.getElementById("btnPrincipal")
+ button.addEventListener("click", respuestaClick)
  function respuestaClick(){
-     if (imagenSeleccionada == true) {
-        console.log("Following");
-     } else {
-        console.log("Please select an image to advance with the order");
-     }      
+     if (imageSelected == true) {
+        let section2 = $(".container-2");
+        section2.show();
+        $('html,body').animate({
+            scrollTop: section2.offset().top
+            },1000
+        );
+        
+        $('.message-errorContinue p').addClass('message-hidden')
+
+    } else {
+        $('.message-errorContinue p').removeClass('message-hidden') 
+    } 
  }
  
-// Segunda Sección
-// Selección del talle de la remera y la cantidad del producto  
+//Section 2
+//Selección del talle de la remera y la cantidad del producto  
 
 const sizeSelector = (event) => {
     const clickedElem = event.target
@@ -59,48 +68,58 @@ $('.calc').click(function(){
     $('.message-errorQuantity').addClass('message-hidden');
 });
 
-// add to cart:
+
+//add to cart:
 //una vez se completó el talle y la cantidad, se habilita y se muestra el popUp
+
 $('.addToCart').on("click", function(){
     //Jquery 
     //Talle
- 
-    let sizeSelected = $('.btn-size-active').val();
-    let qtySelected = $('.calc').val();
-    let popUp = false;
+    let buttonSizeSelected = $('.btn-size-active').val();
+    let buttonQtySelected = $('.calc').val();
+    let sizeSelected;
+    let qtySelected;
 
-    if(typeof(sizeSelected) !== 'undefined' && sizeSelected !=='' ){
-        popUp = true;
+    if(typeof(buttonSizeSelected) !== 'undefined' && buttonSizeSelected !=='' ){
+        sizeSelected = true;
     } else {
         $('.message-errorSize').removeClass('message-hidden');
-        popUp = false;
+        sizeSelected = false;
     }
     
-    if(typeof(qtySelected) !== 'undefined' && qtySelected !== ''){
-        popUp = true;
+    if(typeof(buttonQtySelected) !== 'undefined' && buttonQtySelected !== ''){
+        qtySelected = true;
     } else {
         $('.message-errorQuantity').removeClass('message-hidden');
-        popUp = false;
+        qtySelected = false;
     }
 
-
-    if(popUp == true){
+    if(sizeSelected && qtySelected){
         $.pgwModal({
             target: '#modalContent',
             maxWidth: 400
         });
     } 
-    
 });
 
 
-//checkout 
-//Avances en el popUp
+//checkout (verificar)
+//avance en el popUp
 //mostrar remera
-//calcular total segun cantidad
-//boton de pagar
 
-// calculo final
+//calcular total segun cantidad
+
+
+
+
+
+
+
+
+
+//calculo final
+
+//boton de pagar
 
 
 

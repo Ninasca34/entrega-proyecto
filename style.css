@@ -51,12 +51,12 @@ h1 {
     line-height: 2.5;
     text-transform: uppercase;
     text-align: center;
-    padding: 33px;
+    padding-top: 20px;
+    padding-bottom: 48px;
 }
 
-
 .owl-carousel .owl-item img {
-    padding-bottom: 50px;
+    padding-bottom: 60px;
 }
 
 .demo-image {
@@ -74,10 +74,10 @@ img.tshirt-selected {
     left: 36%;
 }
 
-
 .container-btn1 {
     display: flex;
     justify-content: center;
+    padding-top: 40px;
 }
 
 #btnPrincipal {
@@ -130,14 +130,18 @@ img.tshirt-selected {
     text-align: center;
 }
 
-
 h2 {
     font-size: 1.6rem;
-    letter-spacing: -0.05em;
+    letter-spacing: 0.5px;
     font-weight: normal;
-    padding-top: 25px;
+    padding-top: 50px;
     padding-bottom: 30px;
     font-family: "Raleway", Helvetica, sans-serif;
+}
+
+#btns-size {
+    display: flex;
+    justify-content: center;
 }
 
 .btn-size {
@@ -145,111 +149,9 @@ h2 {
     margin: 10px;
 }
 
-
-#btns-size {
-    display: flex;
-    justify-content: center;
-}
-
-
 .btn-size-active {
     background: #a8eede;
-  }
-
-
-.third-title {
-    text-align: center;
 }
-
-
-h3 {
-    font-size: 1.6rem;
-    line-height: 1.3;
-    padding-top: 50px;
-    padding-bottom: 10px;
-    font-weight: initial;
-    font-family: "Montserrat", sans-serif;
-
-}
-
-.list-price {
-    padding-top:10px;
-
-}
-
-.price {
-    font-size: 1.2rem;
-}
-
-
-.paragraph1 {
-    font-size: 1.1rem;
-    font-family: "Montserrat", sans-serif;
-    margin: 0;
-    padding: 1.3rem;
-    text-align: center;
-   
-}
-
-.parag1 {
-    padding-right: 30px;
-    padding-left: 30px;
-}
-
-.add-product {
-    display: flex;
-    justify-content: center;
-    padding-top: 45px;
-    padding-bottom: 25px;
-}
-
-.addToCart {
-    font-size: 22px;
-    border: none;
-    color: white;
-    border-radius: 0.5rem;
-    text-decoration: none;
-    padding: 10px 40px;
-    background-color: #74caba;
-    font-weight: 700;
-    font-style: normal;
-    max-width: 29%;
-   
-    box-shadow: #888 2px 1px 7px;
-    top: 29rem;
-}
-
-.btn-size:hover {
-    background-position: right;
-    color: black;
-    background-color: #a8eede;
-    font-weight: 700;
-    font-style: normal; 
-}
-
-
-.counter {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-    padding-left: 60px;
-}
-
-.calc {
-    width: 20%;
-    padding: 10px;
-}
-
-
-.owl-carousel .owl-item img {
-    padding-bottom: 0px;
-}
-
-
-.message-hidden {
-    display: none;
-}
-
 
 @media screen and (min-width: 1024px) {
     img.tshirt-selected { 
@@ -259,7 +161,6 @@ h3 {
         top: 18rem;
         left: 36%;
     }
-
 }
 
 @media screen and (width: 768px) {
@@ -292,10 +193,104 @@ h3 {
     }
 }
 
-.owl-theme .owl-dots, .owl-theme .owl-nav {
-    padding-bottom: 50px;
+/* Fin Section 1 */
+
+
+/* Section 2 */
+
+.third-title {
+    text-align: center;
 }
 
+h3 {
+    font-size: 1.6rem;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    font-weight: initial;
+    font-family: "Montserrat", sans-serif;
+}
+
+.list-price {
+    padding-top:10px;
+
+}
+
+.price {
+    font-size: 1.2rem;
+}
+
+.paragraph1 {
+    font-size: 1.1rem;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 1.3rem;
+    text-align: center;
+}
+
+.parag1 {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.add-product {
+    display: flex;
+    justify-content: center;
+    padding-top: 45px;
+    padding-bottom: 8rem;
+}
+
+.addToCart {
+    font-size: 22px;
+    border: none;
+    color: white;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    padding: 10px 40px;
+    background-color: #74caba;
+    font-weight: 700;
+    font-style: normal;
+    max-width: 29%;
+    box-shadow: #888 2px 1px 7px;
+    top: 29rem;
+}
+
+.btn-size:hover {
+    background-position: right;
+    color: black;
+    background-color: #a8eede;
+    font-weight: 700;
+    font-style: normal; 
+}
+
+.counter {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    padding-left: 60px;
+}
+
+.calc {
+    width: 20%;
+    padding: 10px;
+}
+
+.owl-carousel .owl-item img {
+    padding-bottom: 0px;
+}
+
+.owl-theme .owl-dots, .owl-theme .owl-nav {
+    padding-bottom: 60px;
+}
+
+.owl-theme .owl-nav {
+    padding-top: 20px;
+}
+
+.message-hidden {
+    display: none;
+}
 
 /* cart image */
 
@@ -306,6 +301,7 @@ img.tshirt-selected-cart {
     top: 10rem;
     left: 36%;
 }
+
 .tshirt-image-cart {
     background-image: url(images/tshirt_transparent.png);
     background-position: center;
@@ -313,15 +309,80 @@ img.tshirt-selected-cart {
     min-height: 400px;
 }
 
+.message-errorSize {
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: lighter;
+}
 
-/* Fin Section 1 */
+.message-errorQuantity {
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 30px;
+    font-weight: lighter;
+}
+.m-error {
+    font-family: "Montserrat", sans-serif;
+}
+
+#modalContent {
+    display: none;
+}
+
+.strong {
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    text-align: left;
+    padding-top: 10px;
+    font-size: 1.4rem;
+}
+
+.t-shirtTotal {
+    padding-top: 10px;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+}
+
+.payment {
+    color:white;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 40px;
+    background-color: #31645b;
+    border-color: #31645b;
+    font-family: "Montserrat", sans-serif;
+    box-shadow: #888 2px 1px 7px;
+    margin-bottom: 15px;
+}
+
+.payment-btn {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.container-2 {
+    display: none;
+}
 
 
+.message-errorContinue {
+    display: flex;
+    justify-content: center;
+    padding-top: 23rem;
+}
 
+.continue-error {
+    font-family: "Montserrat", sans-serif;
+}
 
-/* Section 2 */
 
 /* Fin Section 2 */
+
 
 
 /* Footer */

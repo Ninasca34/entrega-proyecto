@@ -71,6 +71,11 @@
                     <div class="container-btn1">
                         <button id="btnPrincipal">Continue</button>
                     </div>
+
+                    <div class="message-errorContinue">
+                        <p class="continue-error message-hidden">Please select an image to advance with the order</p>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -84,7 +89,7 @@
     <div class="third-title">
         <h3>Description</h3>
         <div class="list-price">
-            <p class="price">List Price: $560</p>
+            <p class="price">List Price: $890.-</p>
         </div>
         <div class="paragraph1">
             <p class="parag1"></p>
@@ -104,7 +109,7 @@
         <button onclick="sizeSelector(event)" class="btn-size" value="l">L</button>
     </div>
     <div class="message-errorSize message-hidden">
-        <p>Por favor seleecione un talle</p>
+        <p class="m-error">Please select a size</p>
     </div>
 
     <div class="counter">
@@ -115,7 +120,7 @@
         </form>
     </div>
    <div class="message-errorQuantity message-hidden">
-       <p>Please select a quantity</p>
+       <p class="m-error">Please select a quantity</p>
    </div>
 
     <div class="add-product">
@@ -123,12 +128,17 @@
     </div>
 </section>
 
-<div id="modalContent" style="display: none;">
-    <strong style="color: #ff0000;">Modal Example 2</strong>
+<div id="modalContent">
+    <p class="strong">Wild T-Shirt</p>
+    <p class="t-shirtTotal" id="total">Total a pagar: $</p>
     <div class="tshirt-image-cart">
         <img class="tshirt-selected-cart" src="images/placeholder.jpeg"/>
     </div>
     <!-- payment button-->
+    <div class="payment-btn">
+        <button class="payment">Pagar</button>
+    </div>
+
 </div>
 
 <!-- Fin Section 2 -->
