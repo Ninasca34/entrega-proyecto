@@ -213,14 +213,14 @@ h3 {
     font-family: "Montserrat", sans-serif;
 }
 
-.list-price {
+.price {
     padding-top:15px;
     display: flex;
     justify-content: center;
 
 }
 
-.price {
+.listPrice {
     font-size: 1.4rem;
 }
 
@@ -385,6 +385,58 @@ img.tshirt-selected-cart {
 
 
 /* Fin Section 2 */
+
+/* Formulario popUp */
+
+.container-form {
+    display: none;
+}
+
+.fill-form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;  
+    padding: 8%;
+}
+
+.container, .btnSubmit {
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+}
+
+.btnForm {
+    width: 30%;
+    color: white;
+    background-color: #31645b;
+    border-color: #31645b;
+    box-shadow: #888 2px 1px 7px;
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    border: none;
+    font-size: 12px;
+    padding: 12px 58px 10px 25px;
+}
+
+#name {
+    padding: 5px;
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+#email {
+    padding: 5px;
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+#message {
+    width: 101%;
+    padding: 5px;
+}
+
 
 
 
