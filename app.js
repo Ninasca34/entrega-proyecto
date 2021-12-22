@@ -3,12 +3,6 @@
 let imageSelected = false;
 let URL = "./server.json";
 
-
-
-//Ajax call
-
-
-
 //Selección de una imágen del carousel 
 
 document.querySelectorAll(".img-carousel").forEach((item) => {
@@ -139,12 +133,13 @@ $(document).ready(function() {
         console.log(data)
         e.preventDefault();
 
+        //Ajax call
+
         $.ajax({
             url: URL,
             method: "GET",
             data: data
         }).done((response) => {
-            console.log(response)
             $('#contactForm').append(
             `<div class="response-message"> 
                 ${response.message}
@@ -157,4 +152,4 @@ $(document).ready(function() {
 
 //botón pagar y form
 
-/*  $('.payment').show('container-form');  */
+
