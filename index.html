@@ -118,11 +118,11 @@
     </div>
 
     <div class="counter">
-        <form action="/action_page.php">
+        <div>
             <label for="points">Qty:</label>
             <input class="calc" type="number" min="1"id="points" name="points" step="1" value="">
             <!--<input type="submit">-->
-        </form>
+        </div>
     </div>
    <div class="message-errorQuantity message-hidden">
        <p class="m-error">Please select a quantity</p>
@@ -132,23 +132,11 @@
         <button class="addToCart">Add to cart</button>
     </div>
 </section>
-
-<div id="modalContent">
-    <p class="strong">Wild T-Shirt</p>
-    <p class="t-shirtTotal" id="total"></p>
-
-    <div class="tshirt-image-cart">
-        <img class="tshirt-selected-cart" src="images/placeholder.jpeg"/>
-    </div>
-
-    <!-- payment button y form -->
-    <div class="payment-btn">
-        <button class="payment">Pagar</button>
-    </div>
-        
+<section class="container-3">
+    
     <div class="container-form">
 
-        <form class="fill-form">
+        <form id="contactForm" action="http://google.com" class="fill-form">
             <div class="fields">
                 <div class="fieldText">
                     <input type="text" placeholder="Name" id="name" >
@@ -170,10 +158,28 @@
 
     </div>
 
+</section>
+
+<div id="modalContent">
+    <p class="strong">Wild T-Shirt</p>
+    <p class="t-shirtTotal" id="total"></p>
+
+    <div class="tshirt-image-cart">
+        <img class="tshirt-selected-cart" src="images/placeholder.jpeg"/>
+    </div>
+
+    <!-- payment button y form -->
+    <div class="payment-btn">
+        <button class="payment">Pagar</button>
+    </div>
+        
+   
    
 </div>
 
 <!-- Fin Section 2 -->
+
+
 
 
 <!-- Scripts -->

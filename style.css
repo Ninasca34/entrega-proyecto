@@ -368,7 +368,7 @@ img.tshirt-selected-cart {
     
 }
 
-.container-2 {
+.container-2, .container-3 {
     display: none;
 }
 
@@ -388,9 +388,7 @@ img.tshirt-selected-cart {
 
 /* Formulario popUp */
 
-.container-form {
-    display: none;
-}
+
 
 .fill-form {
     display: flex;

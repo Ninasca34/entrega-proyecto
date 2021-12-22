@@ -1,40 +1,13 @@
 //Section 1
 
 let imageSelected = false;
-let URL = "./images.json";
+let URL = "./server.json";
+
 
 
 //Ajax call
-/*
-$.ajax({
-    method: "GET",
-    url: URL,
-    dataType: "JSON",
-}).done((response) => {
-    
-    response.forEach((image) => {
-        $("#carouImage").append(
-            `<div class="item">
-                <img class="img-carousel" src="${image.src}" alt="${image.alt}"/>
-            </div>`
-        );
-    });
-    document.querySelectorAll(".img-carousel").forEach((item) => {
-        item.addEventListener("click", (event) => {
-          imageSelected = true;  
-          const image = event.target.getAttribute("alt");
-          const src = event.target.getAttribute("src")
-          console.log("You have selected the image: " + image)
-          console.log(src)
-          const tshirt = document.querySelector(".tshirt-selected");
-          const tshirtCart = document.querySelector(".tshirt-selected-cart");
-          setImageToTshirt(tshirt, src);
-          setImageToTshirt(tshirtCart, src);
-    
-        });
-    });
-});
-*/
+
+
 
 //Selección de una imágen del carousel 
 
@@ -66,7 +39,9 @@ document.querySelectorAll(".img-carousel").forEach((item) => {
  function respuestaClick(){
      if (imageSelected == true) {
         let section2 = $(".container-2");
+        let section3 = $(".container-3");
         section2.show();
+        section3.show();
         $('html,body').animate({
             scrollTop: section2.offset().top
             },1000
@@ -141,6 +116,7 @@ $('.addToCart').on("click", function(){
             target: '#modalContent',
             maxWidth: 400
         });
+        
     } 
 
     $(".payment-btn").click(function(){
@@ -148,44 +124,37 @@ $('.addToCart').on("click", function(){
     });
 });
 
+$(document).ready(function() {
+    $('form').submit(function(e){
+        let name = $('input#name').val(); 
+        let email = $('input#email').val(); 
+        let message = $('textarea#message').val(); 
+   
+        let data = {
+            'name ': name,
+            'email ': email,
+            'message ': message,
+        }
 
+        console.log(data)
+        e.preventDefault();
+
+        $.ajax({
+            url: URL,
+            method: "GET",
+            data: data
+        }).done((response) => {
+            console.log(response)
+            $('#contactForm').append(
+            `<div class="response-message"> 
+                ${response.message}
+            </div>`
+            )
+        });
+    })
+})
 
 
 //botón pagar y form
 
 /*  $('.payment').show('container-form');  */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
