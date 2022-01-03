@@ -113,7 +113,9 @@ $('.addToCart').on("click", function(){
         
     } 
 
+    //form y botón pagar
     $(".payment-btn").click(function(){
+    alert("Gracias por su compra. Pronto recibirá su pedido!");
         $(".container-form").show();
     });
 });
@@ -133,8 +135,9 @@ $(document).ready(function() {
         console.log(data)
         e.preventDefault();
 
-        //Ajax call
 
+        //Ajax call
+        
         $.ajax({
             url: URL,
             method: "GET",
