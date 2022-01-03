@@ -150,6 +150,6 @@ $(document).ready(function() {
 })
 
 
-//botón pagar y form
+
 
 

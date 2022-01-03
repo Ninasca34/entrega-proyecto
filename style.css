@@ -7,11 +7,6 @@
     padding: 0;
 }
 
-/* Header */
-/* Pendiente */
-/* Fin Header */ 
-
-
 /* Section 1 */
 
   .column {
@@ -287,10 +282,6 @@ h3 {
     padding-bottom: 75px;
 }
 
-/*.owl-theme .owl-nav {
-    padding-top: 20px;
-}*/
-
 .message-hidden {
     display: none;
 }
@@ -350,8 +341,7 @@ img.tshirt-selected-cart {
 
 .payment {
     color:white;
-    font-size: 15px;
-    text-transform: uppercase;
+    font-size: 20px;
     border: none;
     border-radius: 5px;
     padding: 12px 40px;
@@ -372,7 +362,6 @@ img.tshirt-selected-cart {
     display: none;
 }
 
-
 .message-errorContinue {
     display: flex;
     justify-content: center;
@@ -382,7 +371,6 @@ img.tshirt-selected-cart {
 .continue-error {
     font-family: "Montserrat", sans-serif;
 }
-
 
 /* Fin Section 2 */
 
@@ -395,12 +383,6 @@ img.tshirt-selected-cart {
     padding-bottom: 50px;
     
 }
-/*.fields {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    flex-wrap: wrap;  
-}*/
 
 /* Section 3 */
 
@@ -447,9 +429,8 @@ img.tshirt-selected-cart {
     box-shadow: #888 2px 1px 7px;
     border-radius: 5px;
     font-family: "Montserrat", sans-serif;
-    text-transform: uppercase;
     border: none;
-    font-size: 16px;
+    font-size: 18px;
     padding: 12px 25px 10px 25px;
 }
 
@@ -473,8 +454,6 @@ img.tshirt-selected-cart {
     padding: 5px;
 }
 
-
-
 .response-message {
     display: flex;
     justify-content: center;
@@ -483,10 +462,6 @@ img.tshirt-selected-cart {
     font-weight: lighter;
 }
 
-
 /* Fin Section 3 */
 
 
-/* Footer */
-/* Pendiente */
-/* Fin Footer */ 
